@@ -18,14 +18,14 @@ function displayImages() {
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-  var x = document.getElementById("navbar");
+  var x = document.getElementById("navigationbar");
   var y = document.getElementById("myTopnav");
-  if (x.className === "navbar") {
+  if (x.className === "navigationbar") {
     x.className += " responsive";
     y.className += " responsive";
 
   } else {
-    x.className = "navbar";
+    x.className = "navigationbar";
     y.className = "container topnav";
   }
   }
