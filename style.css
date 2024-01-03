@@ -61,11 +61,10 @@ body, html {
 
 }
 
-
-
 .container > a:hover {
     color:rgb(0, 105, 157);
     border-bottom: 3px solid var(--secondarycolor);
+    text-decoration: none;
 }
 
 .socialicons {
@@ -105,13 +104,13 @@ body, html {
     .navigationbar.responsive {
         animation-name: dropdown;
         animation-duration: 0.4s;
-        height: 270px;
+        height: 330px;
         width: 100%;
     }
 
     @keyframes dropdown {
         from {height: 60px}
-        to {height: 270px}
+        to {height: 330px}
     }
 
 
@@ -259,5 +258,98 @@ p {
 
 }
 
+.container3 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 30px;
+}
 
+.container3 img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    
+}
 
+.container3 p {
+    font-size: 16px;
+    width: 400px;
+}
+
+.button {
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 160px;
+    border-radius: 20px;
+    background-color:#3ac7e8;
+    color: rgb(31, 31, 31);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.button:hover {
+    animation: translate 100ms forwards;
+    background-color: #1895d3;
+    cursor: pointer;
+    
+}
+
+@keyframes translate {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+
+    }
+}
+
+.containerheader {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.containerheader .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.containerheader p {
+    width: 400px;
+}
+
+#headerimage1 {
+    max-width: 100%;
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#trailercontainer img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.trailerspecs {
+    text-align: left;
+}

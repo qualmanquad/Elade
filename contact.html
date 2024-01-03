@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elade Landscaping</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formcarry-form.css">
     <link rel="icon" type="image/png" href="EladeLogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,6 +20,7 @@
             width="110px"></a>
 
             <div class="container" id="myTopnav">
+              <a href="index.html">HOME</a>
                 <a href="landscaping.html">LANDSCAPING</a>
                 <a href="fencing.html">FENCING</a>
                 <a href="rentals.html">TRAILER RENTALS</a>
@@ -44,8 +46,31 @@
 
     <div class="bluebar"></div>
 
+    <h1>Contact Us</h1>
+
+    <!-- https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/ -->
+
+    <div class="formcarry-container">
+      <form action="form-process.php" method="POST" class="formcarry-form">
+        <label for="name">Your Name*</label>
+        <input type="text" id="name" name="fullName" required />
+
+        <label for="email">Your Email Address*</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="address">Address</label>
+        <input type="address" id="address" name="address" />
 
 
+        <label for="message">Tell us more about your project</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
 
 
 
@@ -65,7 +90,7 @@
 
     </div>
       
-      <p style="text-align: center;">Copyright 2023 Elade Landscaping - All Rights Reserves</p>
+      <p style="text-align: center;">Copyright 2023 Elade Landscaping - All Rights Reserved</p>
 
     </footer>    
         
