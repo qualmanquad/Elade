@@ -72,7 +72,7 @@
   padding: 12px 20px;
   border-radius: 8px;
 	border-color: transparent;
-  background-color: yellow;
+  background-color: var(--color-blue);
   color: #fff;
   font-weight: 700;
   font-size: 18px;
