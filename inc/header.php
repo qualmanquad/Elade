@@ -9,14 +9,13 @@
     <link rel="icon" type="image/png" href="EladeLogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="formcarry-form.css" />
-    
+    <link rel="stylesheet" href="formcarry-form.css">
 </head>
 <body style="animation: fade 1s forwards;">
 
     <div class="navigationbar" id="navigationbar">
 
-            <a href="index.html"><img src="eladelogos/Elade Colored/Png/Asset 1.png" 
+            <a href="index.php"><img src="eladelogos/Elade Colored/Png/Asset 1.png" 
             width="110px"></a>
 
             <div class="container" id="myTopnav">
