@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['email'])) {
 
     // REPLACE THIS 2 LINES AS YOU DESIRE
@@ -63,11 +64,18 @@ if (isset($_POST['email'])) {
     $email_message .= "Address: " . clean_string($address) . "\n";
     $email_message .= "Message: " . clean_string($message) . "\n";
 
+    
+
+
     // create email headers
+
     $headers = 'From: ' . $email . "\r\n" .
         'Reply-To: ' . $email . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);
+
+
+
 ?>
 
     <!-- Replace this as your success message -->
@@ -77,3 +85,5 @@ if (isset($_POST['email'])) {
 <?php
 }
 ?>
+
+
