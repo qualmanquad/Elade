@@ -4,26 +4,25 @@
 
     <!-- https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/ -->
 
-    <div class="formcarry-container">
-      <form action="form-process.php" method="POST" class="formcarry-form">
-        <label for="name">Your Name*</label>
-        <input type="text" id="name" name="fullName" required />
 
-        <label for="email">Your Email Address*</label>
-        <input type="email" id="email" name="email" required />
+  <div class="formcarry-container">
+    <form class="formcarry-form" action="https://formsubmit.co/trevorqualman@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="New submission!">
+      <label for="name" >Your Name</label>
+      <input type="text" placeholder="Name" name="name">
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" />
+      <input type="hidden" name="_next" value="http://localhost:8080/elade/contact.php">
 
-        <label for="address">Address</label>
-        <input type="address" id="address" name="address" />
+      <label for="email">Your Email Address*</label>
+      <input type="email" name="email" required>
 
+      <label for="message">Tell us about your project </label>
+      <textarea name="message" placeholder="Details of your project" required></textarea>
 
-        <label for="message">Tell us more about your project</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </div>
-
-    <?php include 'inc/footer.php'; ?>
+      <label for="message">Attachments </label>
+      <input type="file" name="attachment" accept="image/png, image/jpeg">
+      <button type="submit">Send</button>
+    </form>
+</div>
+    
+<?php include 'inc/footer.php'; ?>
