@@ -78,74 +78,7 @@ body, html {
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 837px) {
 
-    .container2 > * {
-        text-align: center;
-    }
-
-    .socialicons {
-        display: none;
-    }
-    
-    .container {
-        display: none;
-    }
-
-    .navigationbar a.icon {
-        scale: 1.5;
-        color: black;
-        right: 0;
-        top: 8px;
-        position: absolute;
-        float: right;
-        display: inline;
-        padding: 13px;
-    }
-
-
-    .navigationbar.responsive {
-        animation-name: dropdown;
-        animation-duration: 0.4s;
-        height: 330px;
-        width: 100%;
-    }
-
-    @keyframes dropdown {
-        from {height: 60px}
-        to {height: 330px}
-    }
-
-
-    .container.responsive {
-        opacity: 0%;
-        animation-delay: 0.5s;
-        animation: fade-2 2s forwards;
-        padding-top: 60px;
-        display: flex;
-        margin: auto;
-        width: 300px;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .container a:nth-child(1) {
-        border-top: 2px solid rgb(170, 170, 170);
-    }
-
-    .container a {
-        margin-bottom: 0;
-        margin-top: 2px;
-        border-bottom: 2px solid rgb(170, 170, 170);
-    }
-
-    .header {
-        scale: 0.7;
-    }
-    
-}
 
 .bluebar {
     width: auto;
@@ -163,7 +96,8 @@ body, html {
 /* Image Slideshow */
 #carousel1 img {
     width: auto;
-    height: 700px;
+    max-height: 700px;
+    height: 500px;
     object-fit: cover;
 
 }
@@ -185,7 +119,7 @@ color: rgb(0, 0, 0);
 
 }
 
-h1::before,
+/*h1::before,
 h1::after {
 background-color: var(--secondarycolor);
 content: "";
@@ -193,8 +127,9 @@ display: inline-block;
 height: 2px;
 position: relative;
 vertical-align: middle;
-width: 100px;
+width: 50px;
 }
+*/
 
 h1::before {
 right: 0.5em;
@@ -216,6 +151,7 @@ margin-right: -50%;
     gap: 10px;
     justify-content: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -245,7 +181,7 @@ margin-right: -50%;
 
 #carousel2 img {
     width: 70%;
-    height: 800px;
+    max-height: 800px;
     object-fit: cover;
 
 }
@@ -264,12 +200,16 @@ margin-right: -50%;
 }
 
 .container3 .box {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--secondarycolor);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
 }
 
 .container3 p {
     height: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .container3 img {
@@ -283,12 +223,6 @@ margin-right: -50%;
     font-size: 16px;
     max-width: 400px;
     height: 100px;
-}
-
-#fencing p {
-    font-size: 16px;
-    max-width: 400px;
-    height: 150px;
 }
 
 .button {
@@ -369,7 +303,7 @@ a:hover {
     position: absolute;
     color: rgb(0, 0, 0);
     z-index: 1;
-    top: 38%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 30px;
@@ -382,9 +316,18 @@ a:hover {
 
 .testimonial {
     text-align: center;
-    padding-top: 40px;
-    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 320px;
     margin: auto;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--secondarycolor);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: 2px solid var(--secondarycolor);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .container4 {
@@ -392,4 +335,128 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+    margin: auto;
+    width: 70%;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+.container31 {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.container31 .box {
+    height: fit-content;
+}
+
+.container31 img {
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.container31 p {
+    font-size: 16px;
+    max-width: 400px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 837px) {
+
+    .testimonial {
+        padding-top: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    .container2 > * {
+        text-align: center;
+    }
+
+    .socialicons {
+        display: none;
+    }
+    
+    .container {
+        display: none;
+    }
+
+    .navigationbar a.icon {
+        scale: 1.5;
+        color: black;
+        right: 0;
+        top: 8px;
+        position: absolute;
+        float: right;
+        display: inline;
+        padding: 13px;
+    }
+
+
+    .navigationbar.responsive {
+        animation-name: dropdown;
+        animation-duration: 0.4s;
+        height: 330px;
+        width: 100%;
+    }
+
+    @keyframes dropdown {
+        from {height: 60px}
+        to {height: 330px}
+    }
+
+
+    .container.responsive {
+        opacity: 0%;
+        animation-delay: 0.5s;
+        animation: fade-2 2s forwards;
+        padding-top: 60px;
+        display: flex;
+        margin: auto;
+        width: 300px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container a:nth-child(1) {
+        border-top: 2px solid rgb(170, 170, 170);
+    }
+
+    .container a {
+        margin-bottom: 0;
+        margin-top: 2px;
+        border-bottom: 2px solid rgb(170, 170, 170);
+    }
+
+    .header {
+        scale: 0.7;
+    }
+
+    .containerheader img {
+        max-height: 300px;
+    }
+    
 }
