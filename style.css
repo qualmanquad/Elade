@@ -140,6 +140,10 @@ body, html {
         margin-top: 2px;
         border-bottom: 2px solid rgb(170, 170, 170);
     }
+
+    .header {
+        scale: 0.7;
+    }
     
 }
 
@@ -176,7 +180,6 @@ body, html {
 
 h1 {
 padding-top: 50px;
-overflow: hidden;
 text-align: center;
 color: rgb(0, 0, 0);
 
@@ -214,15 +217,17 @@ margin-right: -50%;
     justify-content: center;
     padding-top: 30px;
 
+}
 
-
+.container2 img {
+    width: 100%;
 }
 
 .container2 p {
-    width: 400px;
+    max-width: 400px;
 }
 
-.box {
+.container2 .box {
     padding: 15px;
 
 }
@@ -233,8 +238,8 @@ margin-right: -50%;
   }
 
 #box4 img {
-    width: 400px;
-    height: 300px;
+    max-width: 400px;
+    max-height: 300px;
     object-fit: cover;
 }
 
@@ -258,9 +263,17 @@ margin-right: -50%;
     
 }
 
+.container3 .box {
+    padding-bottom: 50px;
+}
+
+.container3 p {
+    height: fit-content;
+    margin-bottom: 50px;
+}
 
 .container3 img {
-    width: 350px;
+    max-width: 350px;
     height: 300px;
     object-fit: cover;
     
@@ -268,13 +281,13 @@ margin-right: -50%;
 
 .container3 p {
     font-size: 16px;
-    width: 400px;
+    max-width: 400px;
     height: 100px;
 }
 
 #fencing p {
     font-size: 16px;
-    width: 400px;
+    max-width: 400px;
     height: 150px;
 }
 
@@ -326,12 +339,13 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
 
 
 }
 
 .containerheader p {
-    width: 400px;
+    max-width: 400px;
 }
 
 #headerimage1 {
@@ -359,8 +373,23 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 30px;
-    height: 200px;
-    width: 70%;
+    height: auto;
+    width: auto;
+    min-width: 300px;
     background-color: rgba(255, 255, 255, 0.881);
-    border-radius: 30px;
+    border-radius: 15px;
+}
+
+.testimonial {
+    text-align: center;
+    padding-top: 40px;
+    width: 400px;
+    margin: auto;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
